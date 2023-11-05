@@ -2875,9 +2875,13 @@ textarea.form-control {
 
 
 .select-menu.active .options{
+  position: absolute;
   opacity: 1;
   visibility: visible;
 }
+
+
+
 .options .option{
   display: flex;
   height: 45px;
@@ -2886,6 +2890,7 @@ textarea.form-control {
   border-radius: 8px;
   align-items: center;
   background:#e6e6e6;
+  
 
 }
 .options .option:hover{
