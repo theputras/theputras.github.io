@@ -2859,16 +2859,24 @@ textarea.form-control {
  
 }
 .select-menu .options{
-  position: relative;
+  position: absolute;
+  width: 274px;
   padding: 20px;
   margin-top: 10px;
   border-radius: 8px;
   background:#e6e6e6;
   box-shadow: 0 0 3px rgba(0,0,0,0.1);
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
 }
+
+
+
 .select-menu.active .options{
-  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 .options .option{
   display: flex;
@@ -2878,10 +2886,13 @@ textarea.form-control {
   border-radius: 8px;
   align-items: center;
   background:#e6e6e6;
+
 }
 .options .option:hover{
+  
   background: #6393c9;
   color: #ffffff;
+  
 }
 .option i{
   font-size: 25px;

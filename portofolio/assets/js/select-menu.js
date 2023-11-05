@@ -11,7 +11,9 @@ options.forEach(option =>{
         let selectedOption = option.querySelector(".option-text").innerText;
         sBtn_text.innerText = selectedOption;        
         optionMenu.classList.remove("active");
+        
         console.log(selectedOption)
+        
     });
     
 });
