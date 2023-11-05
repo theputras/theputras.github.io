@@ -2832,12 +2832,12 @@ textarea.form-control {
 }
 
 .select-menu{
-  width: 228px;
+  width: 274px;
   
 }
 .select-menu .select-btn{
   display: flex;
-  height: 40px;
+  height: 45px;
   background:#e6e6e6;
   padding: 20px;
   font-size: 18px;
@@ -2847,6 +2847,7 @@ textarea.form-control {
   cursor: pointer;
   justify-content: space-between;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
+
 }
 .select-btn i{
   font-size: 25px;
@@ -2854,27 +2855,29 @@ textarea.form-control {
 }
 .select-menu.active .select-btn i{
   transform: rotate(-180deg);
+  
+ 
 }
 .select-menu .options{
   position: relative;
   padding: 20px;
   margin-top: 10px;
   border-radius: 8px;
-  background: #fff;
+  background:#e6e6e6;
   box-shadow: 0 0 3px rgba(0,0,0,0.1);
   display: none;
 }
 .select-menu.active .options{
-  display: none;
+  display: block;
 }
 .options .option{
   display: flex;
-  height: 40px;
+  height: 45px;
   cursor: pointer;
   padding: 0 16px;
   border-radius: 8px;
   align-items: center;
-  background: #fff;
+  background:#e6e6e6;
 }
 .options .option:hover{
   background: #6393c9;
@@ -2886,7 +2889,7 @@ textarea.form-control {
 }
 .option .option-text{
   font-size: 18px;
-  color: #333;
+  
 }
 
 
@@ -11351,11 +11354,10 @@ p {
 }
 
 .portfolio .filters {
-  border-bottom: 2px solid #dee2e6;
+
   border-radius: 0;
   padding-bottom: 4px;
   margin: 0 auto 20px;
-  max-width: 400px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
