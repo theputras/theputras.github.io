@@ -23,6 +23,7 @@
   <!-- Bootstrap + JohnDoe main styles -->
 
   <link rel="stylesheet" href="/portofolio/assets/css/portofolio-index.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
 
 </head>
@@ -115,64 +116,41 @@
 
       <h1 class="mb-5"><span class="text-danger">THE PUTRA'S</span> Portfolio</h1>
 
-      <select id="contentSelect">
-  <option value="#">Select Content</option>
-  <option value="#editor">Editor</option>
-  <option value="#section2">Desain</option>
-</select>
-
-<div id="editor" style="display:none;">
-  <div class="portfolio-item">
-
-      <img src="https://i.ytimg.com/vi/IVobv3j70Uk/mqdefault.jpg?sqp=CPTiy5sG-oaymwEmCMACELQB8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGEIgUihyMA8=&rs=AOn4CLBtvNR02dCIUvSurhEZvYnGI5gWTA" class="img-fluid">
-
-      <div class="content-holder">
-
-        <a class="img-popup" href="https://i.ytimg.com/vi/IVobv3j70Uk/mqdefault.jpg?sqp=CPTiy5sG-oaymwEmCMACELQB8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGEIgUihyMA8=&rs=AOn4CLBtvNR02dCIUvSurhEZvYnGI5gWTA"></a>
-
-        <div class="text-holder">
-
-          <h6 class="title">Tugas Admin Sistem Jaringan - Hosting</h6>
-          <a class="btn bg-primary" href="/portofolio/video/videotugas-asjhosting.html"><i
-              class=ti-control-play></i> Play</a>
-
-
+      <div class="select-menu">
+        <div class="select-btn">
+            <span class="sBtn-text">Select your option</span>
+            <i class="bx bx-chevron-down"></i>
         </div>
-
-      </div>
-
+        <ul class="options">
+            <li class="option">
+                <i class="bx bxl-github" style="color: #171515;"></i>
+                <span class="option-text">Github</span>
+            </li>
+            <li class="option">
+                <i class="bx bxl-instagram-alt" style="color: #E1306C;"></i>
+                <span class="option-text">Instagram</span>
+            </li>
+            <li class="option">
+                <i class="bx bxl-linkedin-square" style="color: #0E76A8;"></i>
+                <span class="option-text">Linkedin</span>
+            </li>
+            <li class="option">
+                <i class="bx bxl-facebook-circle" style="color: #4267B2;"></i>
+                <span class="option-text">Facebook</span>
+            </li>
+            <li class="option">
+                <i class="bx bxl-twitter" style="color: #1DA1F2;"></i>
+                <span class="option-text">Twitter</span>
+            </li>
+        </ul>
     </div>
-</div>
 
-<div id="section2" style="display:none;">
-  <h2>Section 2</h2>
-  <p>This is the content of Section 2.</p>
-</div>
-
-<div id="section2" style="display:none;">
-  <h2>Section 3</h2>
-  <p>This is the content of Section 3.</p>
-</div>
-
-<script>
-const select = document.getElementById("contentSelect");
-select.addEventListener("change", function() {
-  const value = this.value;
-  const target = document.querySelector(value);
-  if (target) {
-    const allSections = document.querySelectorAll("div[id^='section']");
-    allSections.forEach(section => {
-      section.style.display = "none";
-    });
-    target.style.display = "block";
-    target.scrollIntoView({ behavior: "smooth" });
-  }
-});
-</script>
-
+<script src="portofolio/assets/js/select-menu.js"></script>
 
 
   </section>
+
+  
 
   <!-- End of portfolio section -->
 
