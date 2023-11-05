@@ -427,6 +427,9 @@ header {
     margin-bottom: 20px;
     cursor: pointer;
 }
+
+
+
 .main-dark .video-detail-page .video-bottom .back-to-history {
     color: #5f5f5f;
 }
@@ -455,6 +458,8 @@ header {
     transition: ease all .3s;
 
 }
+
+
 
 .main-dark .video-detail-page .video-bottom .cmts-count, .main-dark .video-detail-page .video-bottom .video-data-info .video-detail-title{
     display: flex;

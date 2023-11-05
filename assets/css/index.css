@@ -2834,6 +2834,79 @@ textarea.form-control {
   padding: 15px 0;
 }
 
+
+.select-menu{
+  width: 274px;
+  
+}
+.select-menu .select-btn{
+  display: flex;
+  height: 45px;
+  background:#e6e6e6;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 8px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+
+}
+.select-btn i{
+  font-size: 25px;
+  transition: 0.3s;
+}
+.select-menu.active .select-btn i{
+  transform: rotate(-180deg);
+  
+ 
+}
+.select-menu .options{
+  position: absolute;
+  width: 274px;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  background:#e6e6e6;
+  box-shadow: 0 0 3px rgba(0,0,0,0.1);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+
+
+.select-menu.active .options{
+  opacity: 1;
+  visibility: visible;
+}
+.options .option{
+  display: flex;
+  height: 45px;
+  cursor: pointer;
+  padding: 0 16px;
+  border-radius: 8px;
+  align-items: center;
+  background:#e6e6e6;
+
+}
+.options .option:hover{
+  
+  background: #6393c9;
+  color: #ffffff;
+  
+}
+.option i{
+  font-size: 25px;
+  margin-right: 12px;
+}
+.option .option-text{
+  font-size: 18px;
+  
+}
+
 @media (prefers-reduced-motion: reduce) {
   .btn {
     -webkit-transition: none;
@@ -11303,11 +11376,9 @@ p {
 }
 
 .portfolio .filters {
-  border-bottom: 2px solid #dee2e6;
   border-radius: 0;
   padding-bottom: 4px;
   margin: 0 auto 20px;
-  max-width: 400px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

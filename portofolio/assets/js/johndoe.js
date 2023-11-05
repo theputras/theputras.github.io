@@ -165,3 +165,9 @@ $(document).ready(function(){
     $("#wrapper").removeClass('overlay');
   });
 });
+
+
+//back
+function goBack() {
+  window.history.back();
+}

@@ -22,6 +22,7 @@
   <!-- Bootstrap + JohnDoe main styles -->
 
   <link rel="stylesheet" href="assets/css/index.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
 
 </head>
@@ -142,27 +143,38 @@
     <div class="container">
 
       <h1 class="mb-5"><span class="text-danger">My</span> Portfolio</h1>
+      <h6 class="mb-5"><a href="/portofolio/portofolio.html" class="read-more">Portofolio lainnya <i class="ti-angle-double-right"></i></a></h6>
 
       <div class="portfolio">
 
         <div class="filters">
-          <a href="#" data-filter=".editor" class="active">
-
-            Editor
-
-          </a>
-
-          <a href="#" data-filter=".design">
-
-            Design
-
-          </a>
-
-          <a href="#" data-filter=".photography">
-
-            Photography
-
-          </a>
+          <div class="select-menu">
+            <div class="select-btn">
+                <span class="sBtn-text">All</span>
+                <i class="bx bx-chevron-down"></i>
+            </div>
+            <ul class="options">              
+                <li class="option" data-filter=".editor">
+                  <i class="bx bx-desktop"></i>
+                    <span class="option-text" >Video Editor</span>
+                </li>
+                <li class="option" data-filter=".photography">
+                  <i class="bx bxs-camera"></i>
+                    <span class="option-text" >Photography</span>
+                </li>
+    
+                <li class="option" data-filter=".animation">
+                  <i class="bx bxl-html5"></i>
+                  <span class="option-text" >Animation</span>
+              </li>
+         
+              <li class="option" data-filter=".design">
+                <i class="bx bx-paint"></i>
+                <span class="option-text">Graphics Design</span>
+            </li>
+              
+            </ul>
+        </div>
 
         </div>
 
@@ -172,7 +184,7 @@
         <div class="portfolio-container">
 
 <!-- Editor Section -->
-<div class="col-md-6 col-lg-4 editor all">
+<div class="col-md-6 col-lg-4 editor new all">
 
     <div class="portfolio-item">
 
@@ -197,7 +209,7 @@
   </div>
           
 
-          <div class="col-md-6 col-lg-4 editor all">
+          <div class="col-md-6 col-lg-4 editor new all">
 
     <div class="portfolio-item">
 
@@ -221,7 +233,7 @@
 
   </div>
 
-          <div class="col-md-6 col-lg-4 editor all">
+          <div class="col-md-6 col-lg-4 editor new all">
 
     <div class="portfolio-item">
 
@@ -245,7 +257,7 @@
 
   </div>
 
-           <div class="col-md-6 col-lg-4 editor all">
+           <div class="col-md-6 col-lg-4 editor new all">
 
     <div class="portfolio-item">
 
@@ -270,7 +282,7 @@
   </div>
           <!-- Design Section -->
 
-          <div class="col-md-6 col-lg-4 design new">
+          <div class="col-md-6 col-lg-4 design new all">
 
             <div class="portfolio-item">
 
@@ -295,7 +307,7 @@
 
           </div>
 
-          <div class="col-md-6 col-lg-4 design new">
+          <div class="col-md-6 col-lg-4 design new all">
 
             <div class="portfolio-item">
 
@@ -323,7 +335,7 @@
 
 
 
-          <div class="col-md-6 col-lg-4 design new">
+          <div class="col-md-6 col-lg-4 design new all">
 
             <div class="portfolio-item">
 
@@ -349,7 +361,7 @@
           </div>
 
 
-          <div class="col-md-6 col-lg-4 design new">
+          <div class="col-md-6 col-lg-4 design new all">
 
             <div class="portfolio-item">
 
@@ -378,7 +390,7 @@
 
           
 
-<div class="col-md-6 col-lg-4 photography new">
+          <div class="col-md-6 col-lg-4 photography new all">
 
             <div class="portfolio-item">
 
@@ -391,6 +403,7 @@
                 <div class="text-holder">
 
                   <h6 class="title">Foto pemandangan yang berlokasi di Pakuwon City, Surabaya Timur</h6>
+                  <a class="btn bg-primary" href="/portofolio/detail-page/detailfoto-fhao0971.html">Show Detail</a>
 
                   <p class="subtitle"></p>
 
@@ -403,19 +416,20 @@
           </div>
 
 
-          <div class="col-md-6 col-lg-4 photography new">
+          <div class="col-md-6 col-lg-4 photography new all">
 
             <div class="portfolio-item">
 
-              <img src="/portofolio/assets/imgs/coming-soon.jpg" class="img-fluid">
+              <img src="https://drive.google.com/uc?export=view&id=1t1y3OUd0ojTuNC7bIKo7JOuMY5vdfwcN" class="img-fluid">
 
               <div class="content-holder">
 
-                <a class="img-popup" href="/portofolio/assets/imgs/coming-soon.jpg"></a>
+                <a class="img-popup" href="https://drive.google.com/uc?export=view&id=1t1y3OUd0ojTuNC7bIKo7JOuMY5vdfwcN"></a>
 
                 <div class="text-holder">
 
-                  <h6 class="title">Coming Soon</h6>
+                  <h6 class="title">Cosplay Aquamarine Hoshino & Gojo Satoru</h6>
+                  <a class="btn bg-primary" href="/portofolio/detail-page/detailfoto-cosplayfcg10.html">Show Detail</a>
 
                   <p class="subtitle"></p>
 
@@ -431,8 +445,7 @@
 
 
     </div>
-    <a href="/portofolio/portofolio.html" class="read-more">Portofolio lainnya <i
-            class="ti-angle-double-right"></i></a>
+   
     </div>
       
     </div>
@@ -611,7 +624,7 @@
 
 
   <!-- JohnDoe js -->
-
+  <script src="/portofolio/assets/js/select-menu.js"></script>
   <script src="assets/js/johndoe.js"></script>
 
 
