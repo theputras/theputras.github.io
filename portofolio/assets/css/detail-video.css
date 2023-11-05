@@ -414,11 +414,11 @@ header {
     align-items: center;
     margin-bottom: 8px;
     padding-left: 0;
-    width: 100%;
+    width: 64px;
 }
 
 
-.video-detail-page .video-bottom .back-to-history {
+.video-detail-page .video-bottom .back-to-history  a{
     display: flex;
     -moz-align-items: center;
     -ms-align-items: center;
