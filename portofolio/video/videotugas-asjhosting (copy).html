@@ -21,24 +21,27 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
 
     <!-- Bootstrap + JohnDoe main styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 	<link rel="stylesheet" href="assets/css/video-player.css">
+    <link rel="stylesheet" href="path/to/plyr.css" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
 
 </head>
 
 
 <body class="firstuser-live no-banner main-dark player-page">
     
-        <div class="min-content">
-
-            <div class="embed-container">
-                <iframe src="//player.bilibili.com/player.html?aid=969638358&bvid=4787881045923328&cid=238142954&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              
-            </div>
-          
-        </div>
-        
-
+    <div class="plyr__video-embed" id="player">
+        <iframe
+          src="https://www.youtube.com/embed/bTqVqk7FSmY?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
+          allowfullscreen
+          allowtransparency
+          allow="autoplay"
+        ></iframe>
+      </div>
 
 	<!-- core  -->
 
@@ -63,7 +66,7 @@
 
 
     <!-- JohnDoe js -->
-
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
     <script src="assets/js/johndoe.js"></script>
 </body>
 </html>

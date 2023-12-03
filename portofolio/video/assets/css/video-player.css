@@ -155,3 +155,7 @@ container{
     transition: ease all .3s;
 
 }
+
+.player {
+    --plyr-color-main: #1ac266;
+  }
