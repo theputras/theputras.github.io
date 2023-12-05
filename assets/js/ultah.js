@@ -20,11 +20,13 @@
           if (distance < 0) {
             let headline = document.getElementById("headline"),
                 countdown = document.getElementById("countdown"),
-                content = document.getElementById("content");
+                content = document.getElementById("content"),
+                enddate = document.getElementById("enddate");
   
             headline.innerText = "Happy Birthday PUTRA";
             countdown.style.display = "none";
             content.style.display = "block";
+            enddate.style.display = "none";
   
             clearInterval(x);
           }
