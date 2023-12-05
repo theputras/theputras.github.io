@@ -11499,6 +11499,18 @@ p {
 }
 
 
+#countdown {
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+#year, #month, #day, #hours, #minutes, #seconds {
+  font-size: 20px;
+  color: red;
+}
+
 /* blog wrapper */
 .blog-card {
   display: -webkit-box;

@@ -11920,3 +11920,84 @@ pre .code {
   display: block;
   margin-top: 10px;
 }
+
+/* Countdown Ulang Tahun */
+
+.container-ultah{
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+}
+.card-ultah {
+  background-color: #6494c9;
+  background-clip:border-box ;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 10px rgba(173, 190, 221, 0.3);
+  margin-top: 20px;
+  text-align: center;
+}
+
+.card-ultah-body {
+  font-size: 0;
+  padding: 1.25rem;
+
+}
+
+.card-title {
+  font: 2rem;
+  margin: 0 0 0.75rem;
+  color: #6494c9;  
+}
+
+.countdown {
+  display: inline-block;
+  margin-left: 4px;
+}
+
+.countdown:first-child {
+  margin-left: 0;
+}
+
+.countdown>.section-countdown {
+  background-color: #20b3bb;
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  font-size: 50px;
+  color: #fff;
+  line-height: 100px;
+  text-align: center;
+}
+
+.time-label {
+  font-size: 11px;
+  padding-top: 4px;
+  text-align: center;
+}
+
+li{
+  display: inline-block;
+  font-size: 1.5rem;
+  list-style-type:none ;
+  padding: 1em;
+  text-transform: uppercase;
+}
+li span{
+  display: block;
+  font-size: 4.5rem;
+
+}
+
+.emoji{
+  display: none;
+  padding: 1rem;
+  text-align: center;
+}
+
+.emoji span{
+  font-size: 4rem;
+  padding: 0 .5rem;
+  text-align: center;
+}
+
+
