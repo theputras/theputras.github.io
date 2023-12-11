@@ -4,9 +4,10 @@
           hour = minute * 60,
           day = hour * 24;
   
-    let birthday = "Dec 08, 2023",
+    let birthday = "Dec 08, 2023" <script>document.write(new Date().getFullYear())</script>,
         countDown = new Date(birthday).getTime(),
         x = setInterval(function() {    
+          
   
           let now = new Date().getTime(),
               distance = countDown - now;

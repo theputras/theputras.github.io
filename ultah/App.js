@@ -1,21 +1,15 @@
-import React from "react";
-import Home from "./components/Home";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Empdetails from "./components/Empdetails";
-import Empbirthday from "./components/Empbirthday";
-import Error from "./components/Error";
+import './App.css';
+import Board from './components/board';
 
-const App = () => {
+
+function App() {
   return (
-    <Router>
-    <Switch>
-      <Route path="/" component={Home} exact />
-      <Route path="/empdetails" component={Empdetails} exact />
-      <Route path="/empbirthday" component={Empbirthday} exact />
-      <Route component={Error} />
-    </Switch>
-    </Router>
+    <div className="App">
+        <Board></Board>
+    </div>
   );
-};
+}
+
+
 
 export default App;
