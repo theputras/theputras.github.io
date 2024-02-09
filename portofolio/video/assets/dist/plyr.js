@@ -4074,7 +4074,7 @@ typeof navigator === "object" &&
       // Keyboard shortcut settings
       keyboard: {
         focused: true,
-        global: true,
+        global: false,
       },
       // Display tooltips
       tooltips: {
