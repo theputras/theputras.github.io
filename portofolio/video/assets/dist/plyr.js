@@ -3448,11 +3448,11 @@ typeof navigator === "object" && (function (global, factory) {
     // Keyboard shortcut settings
     keyboard: {
       focused: true,
-      global: false
+      global: true
     },
     // Display tooltips
     tooltips: {
-      controls: false,
+      controls: true,
       seek: true
     },
     // Captions settings
@@ -3469,7 +3469,7 @@ typeof navigator === "object" && (function (global, factory) {
       // Allow fullscreen?
       fallback: true,
       // Fallback using full viewport/window
-      iosNative: false // Use the native fullscreen in iOS (disables custom controls)
+      iosNative: true // Use the native fullscreen in iOS (disables custom controls)
       // Selector for the fullscreen container so contextual / non-player content can remain visible in fullscreen mode
       // Non-ancestors of the player element will be ignored
       // container: null, // defaults to the player element
