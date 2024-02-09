@@ -199,6 +199,11 @@ a.plyr__control:before {
 .plyr__controls .plyr__progress__container {
   flex: 1;
   min-width: 0;
+  display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 47px;
+
 }
 .plyr__controls .plyr__controls__item {
   margin-left: 2.5px;
@@ -781,11 +786,15 @@ a.plyr__control:before {
 .plyr__controls > .plyr__control:last-child:hover .plyr__tooltip {
   transform: translate(0) scale(1);
 }
+.plyr__progress :not([aria-disabled=true]) {
+  cursor: pointer;
+}
 .plyr__progress {
   left: 6.5px;
   left: calc(var(--plyr-range-thumb-height, 13px) * 0.5);
   margin-right: 13px;
-  margin-right: var(--plyr-range-thumb-height, 13px);
+  margin-right: var(--plyr-range-thumb-height, 20px);
+  margin-left: var(--plyr-range-thumb-height, 20px);
   position: relative;
 }
 .plyr__progress input[type="range"],

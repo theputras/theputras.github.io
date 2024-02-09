@@ -6,4 +6,6 @@ const player = new Plyr('#player', {
 
 // Expose player so it can be used from the console
 window.player = player;
-
+player.on('ready', (event) => {
+    const instance = event.detail.quality;
+  });
