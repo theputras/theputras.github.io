@@ -1681,7 +1681,7 @@ body {
     box-sizing: border-box;
     font-family: VPlayed;
     font-weight: 500;
-    background-color: #172f58
+    background-color: #6393c9 
 }
 
 .clearfix:after,.clearfix:before {
@@ -4441,7 +4441,7 @@ svg.success {
 .back_btn,.chat_back_btn {
     position: relative;
     display: block;
-    background: #172f58;
+    background: #6393c9;
     border-radius: 100%;
     width: 2.25rem;
     height: 2.25rem;
@@ -4503,7 +4503,7 @@ svg.success {
 
 .back_btn::after {
     content: '';
-    background: #047094;
+    background: #3669a38a;
     position: absolute;
     top: 0;
     left: 0;
@@ -35951,3 +35951,13 @@ play-js .play-control-bar {
 }
 
 
+.ytp-title-enable-channel-logo .ytp-title-channel {
+    display: none !important;
+    }
+    .ytp-title-enable-channel-logo .ytp-title {
+        display: none !important;
+    }
+
+    .player {
+  --plyr-color-main: #1ac266;
+}
