@@ -220,6 +220,9 @@ a.plyr__control:before {
 .plyr__controls .plyr__controls__item.plyr__time {
   padding: 0 5px;
   padding: 0 calc(var(--plyr-control-spacing, 10px) / 2);
+  cursor: pointer;
+  position: absolute;
+    left: 51px;
 }
 .plyr__controls .plyr__controls__item.plyr__progress__container:first-child,
 .plyr__controls .plyr__controls__item.plyr__time + .plyr__time,
@@ -793,8 +796,8 @@ a.plyr__control:before {
   left: 6.5px;
   left: calc(var(--plyr-range-thumb-height, 13px) * 0.5);
   margin-right: 13px;
-  margin-right: var(--plyr-range-thumb-height, 20px);
-  margin-left: var(--plyr-range-thumb-height, 20px);
+  margin-right: var(--plyr-range-thumb-height, 2vh);
+  margin-left: var(--plyr-range-thumb-height, 2vh);
   position: relative;
 }
 .plyr__progress input[type="range"],
@@ -1190,7 +1193,7 @@ a.plyr__control:before {
   display: none;
 }
 .plyr:fullscreen.plyr--hide-controls {
-  cursor: none;
+  cursor: pointer;
 }
 @media (min-width: 1024px) {
   .plyr:fullscreen .plyr__captions {
