@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="Coming Soon">
+
+    <meta name="author" content="Putra">
+
+    <link rel="shortcut icon" class="brand-img" href="assets/imgs/Favicon.png" type="image/png">
+
+    <title>Coming Soon</title>
+
+    <!-- font icons -->
+
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+
+    <!-- Bootstrap + JohnDoe main styles -->
+
+	<link rel="stylesheet" href="assets/css/index.css">
+    
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40">
+
+    <header class="header">
+
+        <div class="container">
+
+            <div class="header-content">
+
+                <h2 style="font-size: 40px; color: #6393c9 !important;">Terima Kasih telah mengisi form ini</h2>
+                <p style="color: white; font-size: 20px;">Halaman ini akan berubah dalam hitungan  <span style="color: #ff006a;" id="msg"></span></p>
+            </div>
+             
+        </div>
+
+    
+
+    </header>
+
+
+
+    <script>
+        var url = "/about.html"; // Ganti dengan URL tujuan Anda
+        var count = 5; // Waktu hitung mundur dalam detik
+    
+        function countDown() {
+            if (count > 0) {
+                count--;
+                var waktu = count + 1;
+                document.getElementById('msg').innerHTML =  waktu;
+                setTimeout(countDown, 1000); // Memanggil fungsi ini setiap 1 detik
+            } else {
+                
+            }
+        }
+    
+        // Memulai hitung mundur saat halaman dimuat
+        countDown();
+    </script>
+
+    
+<footer class="footer py-3">
+
+    <div class="container">
+               
+        <p class="small mb-0 text-light">
+            
+            &copy; <script>document.write(new Date().getFullYear())</script> Created With By <span class="text-danger">THE PUTRA'S</span>
+
+        </p>
+
+    </div>
+
+</footer>
+
+
+	<!-- core  -->
+
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+
+
+    <!-- bootstrap 3 affix -->
+
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+
+
+    <!-- Isotope  -->
+
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+
+    
+
+
+
+    <!-- JohnDoe js -->
+
+    <script src="assets/js/johndoe.js"></script>
+
+
+
+</body>
+
+</html>
+
