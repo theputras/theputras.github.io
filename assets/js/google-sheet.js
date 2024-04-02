@@ -14,7 +14,10 @@ setTimeout(() => {
   }, 3000); // Setelah 3 detik, sembunyikan progress bar
 }, 1000); // Setelah 1 detik, perbarui progress bar ke 100%
   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-
+  .then(response =>{
+    window.location.replace(url);
+    
+  })
   .catch(error => console.error('Error!', error.message))
 })
 
