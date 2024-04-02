@@ -8,13 +8,13 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="description" content="Coming Soon">
+    <meta name="description" content="Loading">
 
     <meta name="author" content="Putra">
 
     <link rel="shortcut icon" class="brand-img" href="assets/imgs/Favicon.png" type="image/png">
 
-    <title>Coming Soon</title>
+    <title>Loading</title>
 
     <!-- font icons -->
 
@@ -36,7 +36,7 @@
             <div class="header-content">
 
                 <h2 style="font-size: 40px; color: #6393c9 !important;">Terima Kasih telah mengisi form ini</h2>
-                <p style="color: white; font-size: 20px;">Halaman ini akan berubah dalam hitungan  <span style="color: #ff006a;" id="msg"></span></p>
+                <p style="color: white; font-size: 20px;">Halaman ini akan berubah dalam <span style="color: #ff006a;" id="msg"></span></p>
             </div>
              
         </div>
@@ -48,17 +48,17 @@
 
 
     <script>
-        var url = "/about.html"; // Ganti dengan URL tujuan Anda
+        var url = "/"; // Ganti dengan URL tujuan Anda
         var count = 5; // Waktu hitung mundur dalam detik
     
         function countDown() {
             if (count > 0) {
                 count--;
                 var waktu = count + 1;
-                document.getElementById('msg').innerHTML =  waktu;
+                document.getElementById('msg').innerHTML = "Hitungan....... "+waktu;
                 setTimeout(countDown, 1000); // Memanggil fungsi ini setiap 1 detik
             } else {
-                
+                window.location.replace(url); // Mengarahkan pengguna setelah hitung mundur selesai
             }
         }
     
