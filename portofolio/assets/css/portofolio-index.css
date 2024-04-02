@@ -11972,3 +11972,43 @@ pre .code {
 .small-vplay {
     margin-bottom: 1.875rem;
 }
+
+
+
+
+.back-to-history {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  padding-left: 0;
+  width: 64px;
+  cursor: pointer
+}
+
+
+ .back-to-history  div{
+  display: flex;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  padding: 10px 0 0px 0px!important;
+}
+
+
+
+ .back-to-history {
+  color: #5f5f5f;
+}
+ .back-to-history svg {
+  fill: #5f5f5f;
+}
+
+ .back-to-history svg {
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}

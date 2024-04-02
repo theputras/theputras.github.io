@@ -2,7 +2,7 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbx-ZzfbneGsZ5Bs95-xHM
 const form = document.forms['submit-to-google-sheet'];
 const sucess = document.getElementById('success');
 const progressText = document.getElementById('progressText');
-const url = './loading.html';
+const url = './redirect.html';
 
 form.addEventListener('submit', e => {
   e.preventDefault();
