@@ -399,6 +399,14 @@ template {
   color: #4b709b;
 }
 
+.loader span{
+  position: absolute;
+left: 50%;
+top: 50%;
+   transform: translate(-50%,250%);
+  font: 30px arial;
+}
+
 .coming-soon {
   background-color: #fff;
   position: fixed;

@@ -29,22 +29,26 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
-  <div class="loader_bg">
+
+
+  <div style="box-shadow: 0 0 1rem 0 rgb(255, 255, 255);" class="loader_bg">
     <div class="loader">
       <img src="/assets/imgs/logo-header.png" alt="#" />
-         <p1>Shop</p1>
+         <p1>Donation</p1>
+         <span style="color: #ff006a;" id="msg"></span>
     </div>
  </div>
+ 
  <header class="header">
 
   <div class="container">
 
    <div class="header-content">
 
-              <h1 class="header-title"><span class="text-danger">THE PUTRA'S Shop</span></h1>
+              <h1 class="header-title"><span class="text-danger">THE PUTRA'S</span></h1>
 
-              <h6 class="header-mono" >Rekomendari barang bagus dan kece dari kami</h6>
-              <h7 class="header-mono" >Barang apa yang lu cari, <span class="text-danger">Gua ada</span></h7>
+              <h6 class="header-mono" >Design, Editor, and Photography</h6>
+              <h7 class="header-mono" >Portofolio dari <span class="text-danger">Putra</span></h7>
 
           </div>
 
@@ -90,11 +94,7 @@
           
           <li class="nav-item">
 
-            <a href="/shop.html" class="nav-link active">Shop</a>
-          </li>
-          <li class="nav-item">
-
-            <a href="/donation.html" class="nav-link">Donation</a>
+            <a href="/Shop.html" class="nav-link active">Shop</a>
           </li>
         </ul>
 
@@ -112,7 +112,25 @@
 
   </nav>
 
-  
+  <script>
+    var url = "https://saweria.co/theputrasmedia"; // Ganti dengan URL tujuan Anda
+        var count = 3; // Waktu hitung mundur dalam detik
+    
+        function countDown() {
+            if (count > 0) {
+                count--;
+                var waktu = count + 1;
+                document.getElementById('msg').innerHTML = "Redirect... "+waktu;
+                setTimeout(countDown, 1000); // Memanggil fungsi ini setiap 1 detik
+            } else {
+                window.location.replace(url); // Mengarahkan pengguna setelah hitung mundur selesai
+            }
+        }
+    
+        // Memulai hitung mundur saat halaman dimuat
+        countDown();
+</script>
+
 
 
 
@@ -129,23 +147,20 @@
 
   </section>
 -->
-  <!-- Portfolio Section -->
-
-  <section class="section bg-custom-gray" id="portfolio">
+  <!-- Portfolio Section   <section class="section bg-custom-gray" id="portfolio">
 
     <div class="container">
       <h1 class="mb-5"><span class="text-danger">THE PUTRA'S</span> Shop</h1>
-      <p1>Barang apa yang lu cari, <span class="text-danger">Gua ada</span></p1>
-      <p><a style="text-align: center;" href="https://www.instagram.com/theputras.shop/" >Cek sosial media kami <i class="ti-angle-double-right"></i></a></p>
       <div style="position: relative; padding-bottom: 100%; padding-top: 100%; height: 0; overflow: hidden;">
-        <iframe style="position: absolute; top:0; left: 0; width: 100%; height: 100%;" src="https://mycollection.shop/theputras.shop" frameborder="0" scrolling="no"></iframe>
-        
+        <iframe style="position: absolute; top:0; left: 0; width: 100%; height: 100%;" src="https://trakteer.id/theputras/tip" frameborder="0" scrolling="no"></iframe>
       </div>
       
     </div>
 
 
-  </section>
+  </section>-->
+
+
 
   <!-- End of portfolio section -->
 
@@ -321,9 +336,7 @@
   <script src="/portofolio/assets/js/select-menu.js"></script>
   <script src="assets/js/johndoe.js"></script>
   <script>
-    setTimeout(function () {
-        $('.loader_bg').fadeOut();
-    }, 1000);
+   
 
   $(document).ready(function(){
         $(".main-menu ul li.megamenu").mouseover(function(){

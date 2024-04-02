@@ -32,26 +32,10 @@
   <div class="loader_bg">
     <div class="loader">
       <img src="/assets/imgs/logo-header.png" alt="#" />
-         <p1>Shop</p1>
+         <p1>Test Form</p1>
     </div>
  </div>
- <header class="header">
 
-  <div class="container">
-
-   <div class="header-content">
-
-              <h1 class="header-title"><span class="text-danger">THE PUTRA'S Shop</span></h1>
-
-              <h6 class="header-mono" >Rekomendari barang bagus dan kece dari kami</h6>
-              <h7 class="header-mono" >Barang apa yang lu cari, <span class="text-danger">Gua ada</span></h7>
-
-          </div>
-
-
-  </div>
-
-</header>
   <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
 
     <div class="container">
@@ -90,7 +74,7 @@
           
           <li class="nav-item">
 
-            <a href="/shop.html" class="nav-link active">Shop</a>
+            <a href="/Shop.html" class="nav-link active">Shop</a>
           </li>
           <li class="nav-item">
 
@@ -131,21 +115,55 @@
 -->
   <!-- Portfolio Section -->
 
-  <section class="section bg-custom-gray" id="portfolio">
+  <div class="container-fluid">
 
-    <div class="container">
-      <h1 class="mb-5"><span class="text-danger">THE PUTRA'S</span> Shop</h1>
-      <p1>Barang apa yang lu cari, <span class="text-danger">Gua ada</span></p1>
-      <p><a style="text-align: center;" href="https://www.instagram.com/theputras.shop/" >Cek sosial media kami <i class="ti-angle-double-right"></i></a></p>
-      <div style="position: relative; padding-bottom: 100%; padding-top: 100%; height: 0; overflow: hidden;">
-        <iframe style="position: absolute; top:0; left: 0; width: 100%; height: 100%;" src="https://mycollection.shop/theputras.shop" frameborder="0" scrolling="no"></iframe>
         
-      </div>
-      
+    <div id="about" class="row about-section">
+
+        
+        
+        <div class="col-lg-8">
+
+            <div class="contact-form-card about-card">
+
+                <h4 class="contact-title">Apa harapanmu di bulan yang fitri ini?</h4>
+                <span id="progressBar" class="line mb-5"></span>
+                <span style="color: #ff006a;" id="progressText"></span>
+                
+
+                <form name="submit-to-google-sheet">
+
+                    <div class="form-group">
+
+                        <input  class="form-control" name="nama" type="text" placeholder="Name *" required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <textarea class="form-control" name="pesan" placeholder="Tuliskan pesan kamu disini *" rows="7" required></textarea>
+
+                    </div>
+
+                    <div class="form-group ">
+
+                        <button id="progressBar" type="submit" class="form-control btn btn-primary" >Send Message</button>
+                        
+
+                    </div>
+                     
+                </form>
+                
+
+            </div>
     </div>
 
+</div>
+   
 
-  </section>
+
+
+</div>
 
   <!-- End of portfolio section -->
 
@@ -323,7 +341,7 @@
   <script>
     setTimeout(function () {
         $('.loader_bg').fadeOut();
-    }, 1000);
+    }, 500);
 
   $(document).ready(function(){
         $(".main-menu ul li.megamenu").mouseover(function(){
@@ -335,6 +353,48 @@
             $("#wrapper").removeClass('overlay');
         });
     });
+    
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby6xglVuD9h2X1Brm-TJf0SgNmdZI83jwwIwsJFFve3PPilTcNVcofxrz0Q3NNTG2Ip/exec';
+const form = document.forms['submit-to-google-sheet'];
+const sucess = document.getElementById('success');
+const progressText = document.getElementById('progressText');
+const url = './test_form.html';
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  // Simulasi loading (misalnya, fetch data dari server)
+  const progressBar = document.getElementById('progressBar');
+  progressBar.style.transition = 'width 5s ease-in-out';
+  progressBar.style.width = "0%";
+  progressText.textContent = "Sending data...";
+
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then(() => {
+      // Update progress bar setelah form dikirim
+      const progressInterval = setInterval(() => {
+        const currentWidth = parseInt(progressBar.style.width);
+        if (currentWidth >= 100) {
+          clearInterval(progressInterval);
+          progressText.textContent = "Success! Redirecting...";
+          // Sembunyikan progress bar setelah beberapa waktu
+          setTimeout(() => {
+            progressBar.style.display = 'none';
+            window.location.replace(url);
+          }, 2000);
+        } else {
+          progressBar.style.width = `${currentWidth + 10}%`;
+        }
+      }, 100);
+    })
+    .catch(error => {
+      console.error('Error!', error.message);
+      progressText.textContent = "Error occurred!";
+      // Sembunyikan progress bar setelah beberapa waktu
+      setTimeout(() => {
+        progressBar.style.display = 'none';
+      }, 2000);
+    });
+});
     </script>
 
 
