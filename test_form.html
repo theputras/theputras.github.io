@@ -120,13 +120,44 @@
         
     <div id="about" class="row about-section">
 
+      <div class="col-lg-8">
+        <div class="contact-form-card about-card">
+        <div class="card-ultah-body" >
+          <div class="card-title"id="headline">
+            <h2>Countdown Menuju hari yang <span class="text-danger">fitri</span>
+          </h2>
+          <span class="line mb-5"></span>
+          </div>
         
+        <h1 id="message" style="display: none;">Selamat Hari Raya Idul Fitri!</h1>
+        <div id="countdown">
+          <div>
+            <span id="days"></span>
+            <div class="smalltext">Days</div>
+          </div>
+          <div>
+            <span id="hours"></span>
+            <div class="smalltext">Hours</div>
+          </div>
+          <div>
+            <span id="minutes"></span>
+            <div class="smalltext">Minutes</div>
+          </div>
+          <div>
+            <span id="seconds"></span>
+            <div class="smalltext">Seconds</div>
+          </div>
+        </div>
+      
+    </div>
+      </div>
+      </div>
         
         <div class="col-lg-8">
 
             <div class="contact-form-card about-card">
 
-                <h4 class="contact-title">Apa harapanmu di bulan yang fitri ini?</h4>
+                <h2 class="contact-title">Apa harapanmu di bulan yang fitri ini?</h4>
                 <p class="contact-title">* Privasi kamu tetap aman</p>
                 <span id="progressBar" class="line mb-5"></span>
                 <span style="color: #ff006a;" id="progressText"></span>
@@ -339,6 +370,7 @@
   <!-- JohnDoe js -->
   <script src="/portofolio/assets/js/select-menu.js"></script>
   <script src="assets/js/johndoe.js"></script>
+  <script src="assets/js/reminder.js"></script>
   <script>
     setTimeout(function () {
         $('.loader_bg').fadeOut();

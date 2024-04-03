@@ -11960,11 +11960,24 @@ pre .code {
 font-size: 30px;
 display: inline-block;
 font-weight: 100;
-color: #B31217;
+color: green;
 text-align: center;
 }
 #countdown > div {
     padding: 10px;
     border-radius: 3px;
     display: inline-block;
+}
+
+#days {
+  color: #23c8d1;
+}
+#hours {
+  color: #23c8d1;
+}
+#minutes {
+  color: #23c8d1;
+}
+#seconds {
+  color: #23c8d1;
 }
