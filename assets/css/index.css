@@ -11979,3 +11979,17 @@ color: #627254;
 #seconds {
   color: #76885B;
 }
+
+/*Float Saweria*/
+.float {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  bottom: 104px;
+  right: 13px;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  transform: translateX(-25px);
+}
