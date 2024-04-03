@@ -24,7 +24,7 @@ form.addEventListener('submit', e => {
           setTimeout(() => {
             progressBar.style.display = 'none';
             window.location.replace(url);
-          }, 2000);
+          }, 500);
         } else {
           progressBar.style.width = `${currentWidth + 10}%`;
         }
@@ -36,6 +36,6 @@ form.addEventListener('submit', e => {
       // Sembunyikan progress bar setelah beberapa waktu
       setTimeout(() => {
         progressBar.style.display = 'none';
-      }, 2000);
+      }, 500);
     });
 });
