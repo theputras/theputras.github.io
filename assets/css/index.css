@@ -11949,30 +11949,32 @@ pre .code {
 #message {
   font-size: 1.5em;
   font-weight: bold;
-  color: green;
+  color: #FA7070;
 }
 #countdown {
 font-size: 30px;
 display: inline-block;
 font-weight: 500;
-color: green;
-text-align: center;
+color: #627254;
+
 }
 #countdown > div {
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 14px;
     display: inline-block;
+    background-color: #EEEEEE;
+    text-align: center;
 }
 
 #days {
-  color: #23c8d1;
+  color: #76885B;
 }
 #hours {
-  color: #23c8d1;
+  color: #76885B;
 }
 #minutes {
-  color: #23c8d1;
+  color: #76885B;
 }
 #seconds {
-  color: #23c8d1;
+  color: #76885B;
 }
