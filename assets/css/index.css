@@ -11944,4 +11944,27 @@ pre .code {
   margin-right: 5px;
 }
 
+/*Reminder Sesuatu*/
 
+#countdown {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#message {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: green;
+}
+#countdown {
+font-size: 30px;
+display: inline-block;
+font-weight: 100;
+color: #B31217;
+text-align: center;
+}
+#countdown > div {
+    padding: 10px;
+    border-radius: 3px;
+    display: inline-block;
+}
