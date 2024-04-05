@@ -150,3 +150,34 @@ function initMap() {
     ]
   });
 }
+
+//Switch dark mode
+const button = document.querySelector('.mode-button');
+const icon = document.querySelector('.mode-icon');
+
+button.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  icon.classList.toggle('light-mode');
+  localStorage.setItem('theme', document.body.classList.contains('dark-mode')? 'dark' : 'light');
+  button.style.backgroundColor = document.body.classList.contains('dark-mode')? '#333' : '#fff';
+});
+
+if (localStorage.getItem('theme') === 'dark') {
+  document.body.classList.add('dark-mode');
+  icon.classList.add('light-mode');
+  button.style.backgroundColor = '#333';
+}
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
+  if (event.matches) {
+    document.body.classList.add('dark-mode');
+    icon.classList.add('light-mode');
+    localStorage.setItem('theme', 'dark');
+    button.style.backgroundColor = '#333';
+  } else {
+    document.body.classList.remove('dark-mode');
+    icon.classList.remove('light-mode');
+    localStorage.setItem('theme', 'light');
+    button.style.backgroundColor = '#fff';
+  }
+});
