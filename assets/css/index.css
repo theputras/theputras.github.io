@@ -12013,8 +12013,8 @@ color: #627254;
   position: fixed;
   width: 80px;
   height: 80px;
-  bottom: 56px;
-  right: 13px;
+  bottom: 36px;
+  right: -4px;
   -webkit-box-align: center;
   text-align: center;
   
@@ -12037,7 +12037,7 @@ color: #627254;
 .text-float p {
   font-size:12px;
   color: #363636;
-  margin-top: 16px;
+  margin-top: 6px;
   text-align: center;
 }
 
