@@ -68,11 +68,11 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
+  line-height: 1.5;  
   text-align: left;
-  background-color: #fff;
+  
 }
+
 
 [tabindex="-1"]:focus {
   outline: 0 !important;
@@ -10997,7 +10997,7 @@ a.text-warning:hover, a.text-warning:focus {
 }
 
 .text-danger {
-  color: #6393c9 !important;
+  color: #1c87ff !important;
 }
 
 a.text-danger:hover, a.text-danger:focus {
@@ -11985,11 +11985,95 @@ color: #627254;
   position: fixed;
   width: 80px;
   height: 80px;
-  bottom: 104px;
+  bottom: 56px;
   right: 13px;
-  color: #FFF;
-  border-radius: 50px;
+  
   text-align: center;
-  box-shadow: 2px 2px 3px #999;
+  
   transform: translateX(-25px);
+  
+  z-index: 9999;
+  color: #363636;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 12px;
+}
+.float img {
+  box-shadow: 2px 2px 3px #999;
+  border-radius: 50px;
+}
+
+.text-float p {
+  font-size:12px;
+  color: #363636;
+}
+
+
+/*Swtich dark mode*/
+.button-container {
+  position: relative;
+  z-index: 1000;
+}
+
+.mode-button {
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.mode-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.mode-icon {
+  fill: currentColor;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+
+body {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+} 
+
+body.dark-mode .bg-white {
+  background-color: #333;
+
+}
+body.dark-mode .mode-icon {
+  fill: #fff;
+}
+.dark-mode {
+  background-color: #212121;
+  color: #ffffff;
+  }
+  
+.dark-mode p {
+  color: #ffffff;
+}
+
+.text-float .dark-mode .theme-switch {
+  color: #fff;
+}
+
+.dark-mode .select-menu .select-btn {
+  background-color: #5b5b5b;
+}
+.dark-mode #countdown>div {
+  background-color: #3f3f3f;
 }
