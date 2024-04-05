@@ -7388,7 +7388,7 @@ button.bg-dark:focus {
 }
 
 .bg-white {
-  background-color: #fff !important;
+  background-color: #fff;
 }
 
 .bg-transparent {
@@ -11589,6 +11589,7 @@ pre .code {
   font-family: "Dosis","Open Sans",sans-serif;
 }
 
+
 .navbar .nav-link.active {
   color: #6393c9 !important;
 }
@@ -11979,6 +11980,33 @@ color: #627254;
 #seconds {
   color: #76885B;
 }
+.container-reminder{
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.remind-title .mb-5 {
+  margin: 0 auto;
+  text-align: center;
+}
+.card-ultah {
+  background-color: #6494c9;
+  background-clip:border-box ;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 10px rgba(173, 190, 221, 0.3);
+  margin-top: 20px;
+  text-align: center;
+}
+
+.card-reminder-body {
+  padding: 1.25rem;
+}
+
+.remind-title {
+  margin: 0.75rem 0 0.75rem;
+}
+
 
 /*Float Saweria*/
 .float {
@@ -11987,7 +12015,7 @@ color: #627254;
   height: 80px;
   bottom: 56px;
   right: 13px;
-  
+  -webkit-box-align: center;
   text-align: center;
   
   transform: translateX(-25px);
@@ -12001,11 +12029,16 @@ color: #627254;
 .float img {
   box-shadow: 2px 2px 3px #999;
   border-radius: 50px;
+  width: 80%;
+  transform: translateX(-1px);
+  text-align: center;
 }
 
 .text-float p {
   font-size:12px;
   color: #363636;
+  margin-top: 16px;
+  text-align: center;
 }
 
 
@@ -12013,14 +12046,16 @@ color: #627254;
 .button-container {
   position: relative;
   z-index: 1000;
+  vertical-align: middle;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .mode-button {
   border: none;
-  cursor: pointer;
-  padding: 0;
-  width: 3rem;
-  height: 3rem;
+  padding: 5px;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 0.5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   display: flex;
@@ -12043,7 +12078,7 @@ color: #627254;
 body {
   background-color: #fff;
   color: #000;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease-in-out;
 }
 
 body.dark-mode {
@@ -12051,10 +12086,7 @@ body.dark-mode {
   color: #fff;
 } 
 
-body.dark-mode .bg-white {
-  background-color: #333;
 
-}
 body.dark-mode .mode-icon {
   fill: #fff;
 }
@@ -12067,13 +12099,70 @@ body.dark-mode .mode-icon {
   color: #ffffff;
 }
 
-.text-float .dark-mode .theme-switch {
+.dark-mode .navbar-light .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.text-float .dark-mode .theme-switch .back-to-history span {
   color: #fff;
 }
 
 .dark-mode .select-menu .select-btn {
   background-color: #5b5b5b;
 }
+
+.dark-mode .options {
+  background-color: #5b5b5b;
+}
+
+.dark-mode .option {
+  background-color: #5b5b5b;
+}
+
+.dark-mode .form-control {
+  background-color: #5b5b5b;
+  color: #fff;
+}
+
+.dark-mode .form-control::placeholder {
+  color: #fff;
+}
 .dark-mode #countdown>div {
   background-color: #3f3f3f;
+}
+
+.dark-mode > .navbar-light .navbar-toggler-icon {
+  fill: #ffff;
+}
+
+.dark-mode .back-to-history svg {
+  fill: #ffff;
+}
+.dark-mode .navbar {
+  background-color: #333;
+  -webkit-box-shadow: 0 1px 10px rgb(129 129 129 / 18%);
+}
+.dark-mode .bg-white .navbar {
+  background-color: #333;
+  
+}
+.dark-mode .card {
+  background-color: #333;
+}
+
+
+.dark-mode .info span {
+color: #fff;
+}
+
+.dark-mode .info li {
+  color: #fff;
+  }
+  
+  .dark-mode .card-body h6 {
+    color: #fff;
+    }
+
+.dark-mode .remind-title h2 {
+color: #fff;
 }

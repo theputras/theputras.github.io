@@ -11498,19 +11498,6 @@ p {
     font-size: var(--app-toolbar-font-size, 20px);
 }
 
-
-#countdown {
-  width: 200px;
-  height: 100px;
-  border: 1px solid black;
-  margin: 0 auto;
-}
-
-#year, #month, #day, #hours, #minutes, #seconds {
-  font-size: 20px;
-  color: red;
-}
-
 /* blog wrapper */
 .blog-card {
   display: -webkit-box;
@@ -12010,3 +11997,224 @@ pre .code {
   height: 15px;
   margin-right: 5px;
 }
+
+
+/*Reminder Sesuatu*/
+
+#message {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #FA7070;
+}
+#countdown {
+font-size: 30px;
+display: inline-block;
+font-weight: 500;
+color: #627254;
+
+}
+#countdown > div {
+    padding: 10px;
+    border-radius: 14px;
+    display: inline-block;
+    background-color: #EEEEEE;
+    text-align: center;
+    margin: 5px;
+}
+
+#days {
+  color: #76885B;
+}
+#hours {
+  color: #76885B;
+}
+#minutes {
+  color: #76885B;
+}
+#seconds {
+  color: #76885B;
+}
+.container-reminder{
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.remind-title .mb-5 {
+  margin: 0 auto;
+  text-align: center;
+}
+.card-ultah {
+  background-color: #6494c9;
+  background-clip:border-box ;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 10px rgba(173, 190, 221, 0.3);
+  margin-top: 20px;
+  text-align: center;
+}
+
+.card-reminder-body {
+  padding: 1.25rem;
+}
+
+.remind-title {
+  margin: 0.75rem 0 0.75rem;
+}
+
+/*Float Saweria*/
+.float {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  bottom: 56px;
+  right: 13px;
+  -webkit-box-align: center;
+  text-align: center;
+  
+  transform: translateX(-25px);
+  
+  z-index: 9999;
+  color: #363636;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 12px;
+}
+.float img {
+  box-shadow: 2px 2px 3px #999;
+  border-radius: 50px;
+  width: 80%;
+  transform: translateX(-1px);
+  text-align: center;
+}
+
+.text-float p {
+  font-size:12px;
+  color: #363636;
+  margin-top: 16px;
+  text-align: center;
+}
+
+
+/*Swtich dark mode*/
+.button-container {
+  position: relative;
+  z-index: 1000;
+  vertical-align: middle;
+  width: 2.5rem;
+  height: 2.5rem;
+  transform: translateX(-33px);
+}
+
+.mode-button {
+  border: none;
+  padding: 5px;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.mode-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.mode-icon {
+  fill: currentColor;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+
+body {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s ease-in-out;
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+} 
+
+
+body.dark-mode .mode-icon {
+  fill: #fff;
+}
+.dark-mode {
+  background-color: #212121;
+  color: #ffffff;
+  }
+  
+.dark-mode p {
+  color: #ffffff;
+}
+
+.dark-mode .navbar-light .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.text-float .dark-mode .theme-switch .back-to-history span {
+  color: #fff;
+}
+
+.dark-mode .select-menu .select-btn {
+  background-color: #5b5b5b;
+}
+
+.dark-mode .options {
+  background-color: #5b5b5b;
+}
+
+.dark-mode .option {
+  background-color: #5b5b5b;
+}
+
+.dark-mode .form-control {
+  background-color: #5b5b5b;
+  color: #fff;
+}
+
+.dark-mode .form-control::placeholder {
+  color: #fff;
+}
+.dark-mode #countdown>div {
+  background-color: #3f3f3f;
+}
+
+.dark-mode > .navbar-light .navbar-toggler-icon {
+  fill: #ffff;
+}
+
+.dark-mode .back-to-history svg {
+  fill: #ffff;
+}
+.dark-mode .navbar {
+  background-color: #333;
+  -webkit-box-shadow: 0 1px 10px rgb(129 129 129 / 18%);
+}
+.dark-mode .bg-white .navbar {
+  background-color: #333;
+  
+}
+.dark-mode .card {
+  background-color: #333;
+}
+
+
+.dark-mode .info span {
+color: #fff;
+}
+
+.dark-mode .info li {
+  color: #fff;
+  }
+  
+  .dark-mode .card-body h6 {
+    color: #fff;
+    }
+    
+    

@@ -1,6 +1,5 @@
  // Set the date we're counting down to
- var countDownDate = new Date("Apr 10, 2024 00:00:00").getTime();
-            
+var countDownDate = new Date("Apr 10, 2024 00:00:00").getTime();  
  // Update the count down every 1 second
  var x = setInterval(function() {
  
@@ -20,7 +19,8 @@
    document.getElementById("days").innerHTML =days ;
 document.getElementById("hours").innerHTML =hours;
 document.getElementById("minutes").innerHTML = minutes; 
-document.getElementById("seconds").innerHTML =seconds; 
+document.getElementById("seconds").innerHTML =seconds;
+document.getElementById("date").innerHTML =Date;
  
    // If the count down is finished, display a message and hide the countdown
    if (distance < 0) {
