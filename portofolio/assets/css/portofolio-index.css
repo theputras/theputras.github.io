@@ -12042,7 +12042,6 @@ color: #627254;
 
 .remind-title .mb-5 {
   margin: 0 auto;
-  text-align: center;
 }
 .card-ultah {
   background-color: #6494c9;
@@ -12056,9 +12055,15 @@ color: #627254;
 .card-reminder-body {
   padding: 1.25rem;
 }
+.remind-title p {
+ font-size: 20px;
+}
 
 .remind-title {
   margin: 0.75rem 0 0.75rem;
+}
+.remind-title2 .mb-5 {
+  text-align: center;
 }
 
 /*Float Saweria*/

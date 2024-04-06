@@ -12001,6 +12001,9 @@ color: #627254;
 .card-reminder-body {
   padding: 1.25rem;
 }
+.remind-title p {
+ font-size: 20px;
+}
 
 .remind-title {
   margin: 0.75rem 0 0.75rem;
@@ -12008,6 +12011,9 @@ color: #627254;
 .remind-title2 .mb-5 {
   text-align: center;
 }
+.remind-title2 p {
+  font-size: 20px;
+ }
 
 /*Float Saweria*/
 .float {
@@ -12168,6 +12174,6 @@ color: #fff;
 color: #fff;
 }
 
-.dark-mode h1 {
+.dark-mode h4 {
   color: #fff;
   }
