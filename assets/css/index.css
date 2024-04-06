@@ -12004,6 +12004,9 @@ color: #627254;
 .remind-title p {
  font-size: 20px;
 }
+.remind-title a {
+  font-size: 20px;
+ }
 
 .remind-title {
   margin: 0.75rem 0 0.75rem;
@@ -12012,6 +12015,9 @@ color: #627254;
   text-align: center;
 }
 .remind-title2 p {
+  font-size: 20px;
+ }
+.remind-title2 a {
   font-size: 20px;
  }
 
