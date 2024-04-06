@@ -5251,6 +5251,14 @@ input[type="button"].btn-block {
   padding: 1.25rem;
 }
 
+.card-social-media {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
 .card-title {
   margin-bottom: 0.75rem;
 }
@@ -12175,7 +12183,6 @@ color: #fff;
   .dark-mode .card-body h6 {
     color: #fff;
     }
-
 .dark-mode .remind-title h2 {
 color: #fff;
 }
@@ -12183,3 +12190,6 @@ color: #fff;
 .dark-mode h4 {
   color: #fff;
   }
+.dark-mode .font-weight-light {
+  color: #fff;
+}
