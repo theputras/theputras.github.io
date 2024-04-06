@@ -924,3 +924,32 @@ a.share {
 .mid-banners .contus-slider-outer {
     padding-bottom: 0
 }
+
+
+/*Dark Mode */
+body {
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+  } 
+  
+  
+body.dark-mode .mode-icon {
+    fill: #fff;
+  }
+.dark-mode {
+    background-color: #212121;
+    color: #ffffff;
+    }
+.dark-mode .video-detail-page .video-bottom .back-to-history {
+    color: #fff;
+  }
+  
+.dark-mode .video-detail-page .video-bottom .back-to-history svg {
+    fill: #fff;
+}

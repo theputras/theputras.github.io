@@ -125,7 +125,7 @@
       <div class="col-lg-8">
         <div class="contact-form-card about-card">
           <div class="card-ultah-body" >
-            <div class="card-title"id="headline">
+            <div class="remind-title2" id="headline">
               <h2>Countdown Menuju hari yang <span class="text-danger">fitri</span>
             </h2>
             <span style="margin-bottom: 2rem !important;" class="line mb-5"></span>
@@ -380,21 +380,8 @@
   <script src="/portofolio/assets/js/select-menu.js"></script>
   <script src="assets/js/johndoe.js"></script>
   <script src="assets/js/reminder.js"></script>
+  <script src="/assets/js/loader.js"></script>  
   <script>
-    setTimeout(function () {
-        $('.loader_bg').fadeOut();
-    }, 500);
-
-  $(document).ready(function(){
-        $(".main-menu ul li.megamenu").mouseover(function(){
-            if (!$(this).parent().hasClass("#wrapper")){
-            $("#wrapper").addClass('overlay');
-            }
-        });
-        $(".main-menu ul li.megamenu").mouseleave(function(){
-            $("#wrapper").removeClass('overlay');
-        });
-    });
     
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwOS6Ecd6v_dECr4ii_lhbVoIChYzprhpGMW8KH42pqTAmOPv8zEIrGqSDE7Ufe-xve/exec';
 const form = document.forms['submit-to-google-sheet'];

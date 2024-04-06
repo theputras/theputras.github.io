@@ -12006,7 +12006,10 @@ color: #627254;
 .remind-title {
   margin: 0.75rem 0 0.75rem;
 }
-
+.remind-title2 .mb-5 {
+  margin: 0 auto;
+  text-align: center;
+}
 
 /*Float Saweria*/
 .float {
@@ -12103,10 +12106,6 @@ body.dark-mode .mode-icon {
   color: #ffffff;
 }
 
-.text-float .dark-mode .theme-switch .back-to-history span {
-  color: #fff;
-}
-
 .dark-mode .select-menu .select-btn {
   background-color: #5b5b5b;
 }
@@ -12133,6 +12132,10 @@ body.dark-mode .mode-icon {
 
 .dark-mode > .navbar-light .navbar-toggler-icon {
   fill: #ffff;
+}
+
+.text-float .dark-mode .theme-switch .back-to-history span {
+  color: #fff;
 }
 
 .dark-mode .back-to-history svg {
@@ -12166,3 +12169,7 @@ color: #fff;
 .dark-mode .remind-title h2 {
 color: #fff;
 }
+
+.dark-mode h1 {
+  color: #fff;
+  }

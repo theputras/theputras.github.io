@@ -319,24 +319,7 @@
   <script src="/portofolio/assets/js/select-menu.js"></script>
   <script src="/assets/js/johndoe.js"></script>
   <script src="/assets/js/go-back.js"></script>
-  <script>
-    setTimeout(function () {
-        $('.loader_bg').fadeOut();
-    }, 1000);
-
-  $(document).ready(function(){
-        $(".main-menu ul li.megamenu").mouseover(function(){
-            if (!$(this).parent().hasClass("#wrapper")){
-            $("#wrapper").addClass('overlay');
-            }
-        });
-        $(".main-menu ul li.megamenu").mouseleave(function(){
-            $("#wrapper").removeClass('overlay');
-        });
-    });
-    </script>
-
-
+  <script src="/assets/js/loader.js"></script>
 </body>
 
 </html>
