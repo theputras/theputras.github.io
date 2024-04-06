@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwXWr3-ObUwyQPB1H2BWrx40T2uSVAmXhSrrcDjTIig7lUWERMA9VLqV_8UGtAZLWfz/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzEZBnS6awv6W9SPZ6q1qgQY8ggmxEKLMnCuCs966kSF8PcPO_29edYYHK89Pe9S47z/exec';
 const form = document.forms['submit-to-google-sheet'];
 const sucess = document.getElementById('success');
 const progressText = document.getElementById('progressText');
