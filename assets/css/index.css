@@ -12193,3 +12193,26 @@ color: #fff;
 .dark-mode .font-weight-light {
   color: #fff;
 }
+
+
+/*Web Shop*/
+
+.web-shop {
+  position: relative; 
+  padding-bottom: 100%; 
+  padding-top: 100%; 
+  height: 0; 
+  overflow: hidden;
+}
+
+.web-shop iframe {
+  position: absolute; 
+  top:0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%
+}
+
+
+
+
