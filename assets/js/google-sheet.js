@@ -10,7 +10,7 @@ form.addEventListener('submit', e => {
   const progressBar = document.getElementById('progressBar');
   progressBar.style.transition = 'width 5s ease-in-out';
   progressBar.style.width = "0%";
-  progressText.textContent = "Sending data...";
+  progressText.textContent = "Please Wait...";
 
   fetch(scriptURL, { method: 'POST', body: new FormData(form) })
     .then(() => {

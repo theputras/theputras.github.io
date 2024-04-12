@@ -12094,7 +12094,9 @@ color: #627254;
   height: 1.5rem;
 }
 
-
+button:focus.mode-button {
+  outline: 0px !important;
+}
 body {
   background-color: #fff;
   color: #000;
@@ -12121,6 +12123,7 @@ body.dark-mode .mode-icon {
 
 .dark-mode .navbar-light .navbar-nav .nav-link {
   color: #ffffff;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .dark-mode .select-menu .select-btn {
@@ -12149,10 +12152,12 @@ body.dark-mode .mode-icon {
 
 .dark-mode > .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 448 512' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.8)' stroke-width='1' stroke-linecap='round' stroke-miterlimit='10' fill='white' d='M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z'/%3e%3c/svg%3e");
+  transition: background-color 0.3s ease-in-out;  
 }
 
 .text-float .dark-mode .theme-switch .back-to-history span {
   color: #fff;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .dark-mode .back-to-history svg {
@@ -12161,6 +12166,7 @@ body.dark-mode .mode-icon {
 .dark-mode .navbar {
   background-color: #333;
   -webkit-box-shadow: 0 1px 10px rgb(129 129 129 / 18%);
+  transition: background-color 0.3s ease-in-out;
 }
 .dark-mode .bg-white .navbar {
   background-color: #333;
