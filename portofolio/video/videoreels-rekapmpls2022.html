@@ -23,16 +23,21 @@
     <!-- Bootstrap + JohnDoe main styles -->
 
 	<link rel="stylesheet" href="assets/css/video-player.css">
+	<link rel="stylesheet" href="./assets/dist/plyr.css">
 
 </head>
 
 
 <body class="firstuser-live no-banner main-dark player-page">
     
-        <div class="min-content">
+        <div class="min-content" id="player">
 
             <div class="embed-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZDaTe3or328?autoplay=1&showinfo=0&rel=0&loop=0&modestbranding=1&wmode=transparent" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZDaTe3or328?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1&vq=highres&autoplay=1"
+                allowfullscreen
+                allowtransparency
+                allow="autoplay" title="YouTube video player" frameborder="0"></iframe>
+                <img id="watermark" src="/assets/imgs/logo-header.png" alt="watermark">
             </div>
           
         </div>
@@ -80,5 +85,7 @@
 
     <script src="/portofolio/assets/js/johndoe.js"></script>
     <script src="/assets/js/go-back.js"></script>
+    <script src="./assets/dist/plyr.js"></script>
+    <script src="./assets/js/App.js"></script>
 </body>
 </html>

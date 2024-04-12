@@ -35961,3 +35961,15 @@ play-js .play-control-bar {
     .player {
   --plyr-color-main: #1ac266;
 }
+
+
+#watermark {
+    position: fixed;
+    bottom: 76px;
+    right: 44px;
+    z-index: 9999;
+    opacity: 0.7;
+    width: 136px;
+    height: auto;
+    pointer-events: none;
+}

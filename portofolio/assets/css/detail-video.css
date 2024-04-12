@@ -953,3 +953,6 @@ body.dark-mode .mode-icon {
 .dark-mode .video-detail-page .video-bottom .back-to-history svg {
     fill: #fff;
 }
+.dark-mode .video-detail-title h1 {
+    color: #fff;
+}

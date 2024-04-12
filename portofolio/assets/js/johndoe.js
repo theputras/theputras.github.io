@@ -181,3 +181,19 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (ev
     button.style.backgroundColor = '#fff';
   }
 });
+
+document.addEventListener("fullscreenchange", function() {
+  if (document.fullscreenElement) {
+    document.getElementById("watermark").style.display = "block";
+  } else {
+    document.getElementById("watermark").style.display = "none";
+  }
+});
+
+document.getElementById("myIframe").addEventListener("fullscreenchange", function() {
+  if (document.fullscreenElement) {
+    document.getElementById("watermark").style.display = "block";
+  } else {
+    document.getElementById("watermark").style.display = "none";
+  }
+});
