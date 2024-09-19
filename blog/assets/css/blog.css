@@ -70,7 +70,7 @@ body {
   font-weight: 400;
   line-height: 1.5;  
   text-align: left;
-  
+  height: 100vh; /* Tinggi body menyesuaikan dengan konten */
 }
 
 
@@ -2787,12 +2787,29 @@ textarea.form-control {
 /* Blog */
 .index-blog {
 padding: 10px 40px 0 40px;
+height: 75vh; /* Tinggi body menyesuaikan dengan konten */
 }
+
+
+#resume {
+padding: 15px 0 0 0;
+margin: 20px 0 0 0;
+}
+
 .judul-blog {
 text-align: center;
 word-wrap: break-word;
 font-weight: 800;
 padding: 0 0 20px 0;
+}
+
+#garisJudul{
+  border: none;
+  width: 5vh;
+  height: 5px;
+  background-color: #1c87ff ;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .index-blog p {
@@ -12148,6 +12165,11 @@ pre .code {
 
 .footer {
   background: #41C9E2;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  
+  min-height: 0;
 }
 
 .header {
