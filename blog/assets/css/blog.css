@@ -2787,7 +2787,6 @@ textarea.form-control {
 /* Blog */
 .index-blog {
 padding: 10px 40px 0 40px;
-height: 75vh; /* Tinggi body menyesuaikan dengan konten */
 }
 
 
@@ -12165,11 +12164,6 @@ pre .code {
 
 .footer {
   background: #41C9E2;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  
-  min-height: 0;
 }
 
 .header {
