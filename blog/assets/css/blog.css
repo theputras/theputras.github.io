@@ -12919,6 +12919,10 @@ h3.jeg_author_name {
   color: #53585c;
 }
 
+.dark-mode #breadcrumbs a, .dark-mode #breadcrumbs .breadcrumb_last_link a {
+  color: #ffff;
+}
+
 #breadcrumbs .fa {
   padding: 0 3px;
 }
