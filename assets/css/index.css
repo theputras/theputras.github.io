@@ -11648,19 +11648,145 @@ p {
   display: none
 }
 
-
-.contus-slider {
-  width: 100%;
+/* Slider Portfolio */
+.owl-next.disabled,.owl-prev.disabled {
+  display: none!important
+}
+.owl-nav {
+  position: relative;
+  width: 100%; /* Memastikan tombol tersebar di seluruh lebar kontainer */
   display: flex;
-  flex-wrap: nowrap
+  justify-content: space-between; /* Membuat tombol prev dan next di kiri dan kanan */
+  align-items: center; /* Posisi tombol sejajar secara vertikal */
+  top: 0; /* Pastikan berada di bagian atas kontainer */
+}
+.banner-slider .owl-nav .owl-prev {
+  position: absolute;
+  left: 3%;
+  font-size: 0!important;
+  background-image: url(w-right-arrow.193efa28da9a9f13bea8.svg)!important;
+  background-size: contain!important;
+  width: 1.875rem;
+  height: 1.875rem;
+  display: inline-block;
+  transform: rotate(180deg)
+}
+.owl-nav button {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  border: none;
+  background: 0 0;
+  cursor: pointer
+}
+
+.mid-banners .owl-nav button {
+  margin-top: 21px
+}
+.banner-slider .owl-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%
+}
+.banner-slider .owl-nav .owl-prev {
+  position: absolute;
+  left: 3%;
+  font-size: 0!important;
+  background-image: url(w-right-arrow.193efa28da9a9f13bea8.svg)!important;
+  background-size: contain!important;
+  width: 1.875rem;
+  height: 1.875rem;
+  display: inline-block;
+  transform: rotate(180deg)
+}
+
+.small-vplay .small-slider .owl-nav .owl-next,.small-vplay .small-slider .owl-nav .owl-prev {
+  background-size: contain!important;
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  z-index: 1;
+  transform: translate(-50%,-50%) rotate(180deg);
+  transition: transform .55s
+}
+.small-vplay .small-slider .owl-nav .owl-prev {
+  left: -15px
+}
+
+.small-vplay .small-slider .owl-nav button {
+  position: absolute;
+  top: 45%
+}
+
+.small-vplay .small-slider .owl-nav button span {
+  font-size: 0
+}
+
+.owl-nav button {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none; /* Hilangkan garis fokus */
+}
+.owl-carousel .owl-dot,.owl-carousel .owl-nav .owl-next,.owl-carousel .owl-nav .owl-prev {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+.owl-carousel .owl-nav button.owl-next,.owl-carousel .owl-nav button.owl-prev,.owl-carousel button.owl-dot {
+  background: 0 0;
+  color: inherit;
+  border: none;
+  padding: 0!important;
+  font: inherit
+}
+
+
+.main-dark .small-vplay .small-slider .owl-nav .owl-next,.main-dark .small-vplay .small-slider .owl-nav .owl-prev {
+  background: url(right-arrow.a006d570775b3285762d.svg) no-repeat
+}
+
+.main-dark .small-vplay .small-slider .owl-nav .owl-next,.main-dark .small-vplay .small-slider .owl-nav .owl-prev {
+  background: url(right-arrow.a006d570775b3285762d.svg) no-repeat
+}
+.main-dark .small-vplay .small-slider .owl-nav .owl-prev {
+  left: 6vw!important
+}
+
+.main-dark .small-vplay .small-slider .owl-nav .owl-next {
+  right: -38px!important
+}
+
+.container-portfolio {
+  width: 1280px !important;
+  margin: 0 auto;
+  position: relative;
 }
 
 .contus-slider-outer {
   position: relative;
-  overflow: hidden;
+  overflow: hidden; /* Mencegah konten keluar dari area slider */
   width: 100%;
-  padding: 1.375rem 5px
+  display: flex;
+  align-items: center;
 }
+
+.contus-slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out; /* Tambahkan transisi untuk efek halus */
+  will-change: transform; /* Optimalkan kinerja */
+}
+
 
 .cs-slider .item:hover {
   z-index: 1
@@ -11716,16 +11842,7 @@ p {
 }
 
 
-.owl-nav button {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-  border: none;
-  background: 0 0;
-  cursor: pointer;
-}
+
 
 .small-vplay .small-slider .owl-nav .owl-prev:hover {
   transform: translate(-50%,-50%) rotate(180deg) scale(.94)

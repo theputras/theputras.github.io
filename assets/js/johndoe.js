@@ -182,3 +182,43 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (ev
     button.style.backgroundColor = '#fff';
   }
 });
+
+//slider portfolio
+
+document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.querySelector('.contus-slider');
+    const prevButton = document.querySelector('.owl-prev');
+    const nextButton = document.querySelector('.owl-next');
+    let currentIndex = 0;
+
+    // Fungsi untuk menampilkan dan menyembunyikan tombol
+    function updateButtons() {
+        prevButton.style.display = currentIndex > 0 ? 'flex' : 'none';
+        nextButton.style.display = currentIndex < slider.children.length - 1 ? 'flex' : 'none';
+    }
+
+    // Fungsi untuk menggeser slider
+    function slideTo(index) {
+        const offset = -index * 237.649; // Sesuaikan dengan lebar item
+        slider.style.transform = `translateX(${offset}px)`;
+        currentIndex = index;
+        updateButtons();
+    }
+
+    // Event listener untuk tombol next
+    nextButton.addEventListener('click', function() {
+        if (currentIndex < slider.children.length - 1) {
+            slideTo(currentIndex + 1);
+        }
+    });
+
+    // Event listener untuk tombol prev
+    prevButton.addEventListener('click', function() {
+        if (currentIndex > 0) {
+            slideTo(currentIndex - 1);
+        }
+    });
+
+    // Inisialisasi
+    updateButtons();
+});
